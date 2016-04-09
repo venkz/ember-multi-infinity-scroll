@@ -1,0 +1,9 @@
+<br />
+<h3>Users Model - {{model.length}}(loaded)</h3>
+<ul style="overflow: scroll; height:300px; position: relative" id="user-scroll">
+   {{#each model as |user idx|}}
+     <li>{{idx}}-user-{{user.name}}</li>
+   {{/each}}
+{{infinity-loader infinityModel=model scrollable="#user-scroll"}}
+</ul>
+{{outlet}}
