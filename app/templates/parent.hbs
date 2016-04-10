@@ -1,12 +1,9 @@
 <br />
-<h3>contacts Model - {{model.length}}(loaded)</h3>
+<h3>contacts Model - {{model.length}}(loaded)</h3><button {{action "commonAction"}}>parent button</button>
 <ul style="overflow: scroll; height:300px; position: relative" id="contact-scroll">
    {{#each model as |contact idx|}}
      <li>{{idx}}-contact-{{contact.name}}</li>
    {{/each}}
 {{infinity-loader infinityModel=model scrollable="#contact-scroll"}}
 </ul>
-
-
-{{model.length}}
 {{outlet}}
