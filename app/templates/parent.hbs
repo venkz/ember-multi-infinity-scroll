@@ -4,7 +4,7 @@
    {{#each model as |contact idx|}}
      <li>{{idx}}-contact-{{contact.name}}</li>
    {{/each}}
-{{infinity-loader infinityModel=model scrollable="#contact-scroll"}}
+{{infinity-loader infinityModel=model scrollable="#contact-scroll" loadMoreAction='parentInfinityLoad'}}
 </ul>
 
 
